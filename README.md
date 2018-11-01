@@ -1,14 +1,14 @@
 <!--
-1º Projeto de Introdução à Computação 2018/2019 (c) by Pedro Serra
+1º Projecto de Introdução à Computação 2018/2019 (c) by Pedro Serra
 
-1º Projeto de Introdução à Computação 2018/2019 is licensed under a
+1º Projecto de Introdução à Computação 2018/2019 is licensed under a
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
 You should have received a copy of the license along with this
 work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.
 -->
 
-# 1º Projeto de Introdução à Computação 2018/2019
+# 1º Projecto de Introdução à Computação 2018/2019
 
 ## Descrição do problema
 
@@ -64,14 +64,14 @@ A forma de obter, editar e submeter o trabalho será através do [Moodle] até �
 
 ## Sobre o Git e GitHub
 
-O [Git] é um sistema de gestão de código fonte, essencial para desenvolver qualquer tipo de projetos. O [GitHub], e plataformas semelhantes tais como o [GitLab], [BitBucket] e [NotABug], oferecem repositórios Git remotos e vários serviços associados (_tracking_ de _bugs_, wikis, visualização de código, integração de ramos e por ai fora). Alguns tutoriais úteis e interessantes:
+O [Git] é um sistema de gestão de código fonte, essencial para desenvolver qualquer tipo de Projectos. O [GitHub], e plataformas semelhantes tais como o [GitLab], [BitBucket] e [NotABug], oferecem repositórios Git remotos e vários serviços associados (_tracking_ de _bugs_, wikis, visualização de código, integração de ramos e por ai fora). Alguns tutoriais úteis e interessantes:
 
 * [Aprender Git em 15 minutos][git-tutorial]
 * [Learn Git](https://www.codecademy.com/learn/learn-git)
 * [GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [A Beginner’s Git and GitHub Tutorial](https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html)
 
-## Software necessário e/ou útil para elaboração do projeto
+## Software necessário e/ou útil para elaboração do Projecto
 
 * Compilador C99:
     - [GCC]
@@ -113,7 +113,7 @@ O plágio inclui a utilização de ideias, código ou conjuntos de soluções
 de outros alunos ou indivíduos, ou quaisquer outras fontes para além
 dos textos de apoio à disciplina, sem dar o respectivo crédito a essas
 fontes. Os alunos são encorajados a discutir os problemas com outros
-alunos e devem mencionar essa discussão quando submetem os projetos.
+alunos e devem mencionar essa discussão quando submetem os Projectos.
 Essa menção **não** influenciará a nota. Os alunos não deverão, no
 entanto, copiar códigos, documentação e relatórios de outros alunos, ou dar os
 seus próprios códigos, documentação e relatórios a outros em qualquer
@@ -122,7 +122,7 @@ relatórios em computadores de uso partilhado.
 
 Nesta disciplina, a desonestidade académica é considerada fraude, com
 todas as consequências legais que daí advêm. Qualquer fraude terá como
-consequência imediata a anulação dos projetos de todos os alunos envolvidos
+consequência imediata a anulação dos Projectos de todos os alunos envolvidos
 (incluindo os que possibilitaram a ocorrência). Qualquer suspeita de
 desonestidade académica será relatada aos órgãos superiores da escola
 para possível instauração de um processo disciplinar. Este poderá
