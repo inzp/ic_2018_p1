@@ -66,7 +66,6 @@ A forma de obter, editar e submeter o trabalho será através do [Moodle] até �
 
 O [Git] é um sistema de gestão de código fonte, essencial para desenvolver qualquer tipo de Projectos. O [GitHub], e plataformas semelhantes tais como o [GitLab], [BitBucket] e [NotABug], oferecem repositórios Git remotos e vários serviços associados (_tracking_ de _bugs_, wikis, visualização de código, integração de ramos e por ai fora). Alguns tutoriais úteis e interessantes:
 
-* [Aprender Git em 15 minutos][git-tutorial]
 * [Learn Git](https://www.codecademy.com/learn/learn-git)
 * [GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [A Beginner’s Git and GitHub Tutorial](https://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html)
@@ -95,11 +94,11 @@ O [Git] é um sistema de gestão de código fonte, essencial para desenvolver qu
 
 ## Peso na avaliação
 
-O projecto vale 10% da nota final (2 valores) e a avaliação do mesmo será feita da seguinte forma:
+O projecto vale 20% da nota final (4 valores) e a avaliação do mesmo será feita da seguinte forma:
 
-* 1,1 valores - Código (funcionalidade, indentação, comentários e compilação sem erros/warnings).
-* 0,5 valores - Relatório em formato Markdown.
-* 0,4 valores - Opções extra
+* 2,2 valores - Código (funcionalidade, indentação, comentários e compilação sem erros/warnings).
+* 1 valores - Relatório em formato Markdown.
+* 0,8 valores - Opções extra
 
 
 ## Honestidade académica
