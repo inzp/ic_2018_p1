@@ -1,0 +1,198 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+char getOption ()
+{
+    char option;
+
+    printf("\nAs tuas opções:\n");
+    printf("\tn - Numero\n");
+    printf("\te - Par\n");
+    printf("\to - Impar\n");
+    printf("\tb - Valor da aposta\n");
+    printf("\tr - Rolar\n");
+    printf("\ts - Dinheiro currente\n");
+    printf("\tc - Cashout\n\n");
+    printf("O que pretendes fazer? ");
+
+    scanf(" %c", &option);
+    return option;
+}
+
+int getNumber(void)
+{
+    int numeroAposta;
+    printf("\nQueres apostar em que numero? ");
+    scanf(" %d", &numeroAposta);
+    return numeroAposta;
+}
+
+int roll(void)
+{
+    int i;
+    int numeroRoleta;
+    for(i=0 ; i <= 1 ; i++)
+    {
+        numeroRoleta = (rand()% 37);
+    }
+    return numeroRoleta;
+}
+
+int getValue()
+{
+    int betValue;
+
+    printf("\nQuanto dinheiro pretendes apostar? ");
+    scanf(" %d", &betValue);
+    return betValue;
+}
+
+int cashout()
+{
+    int exit;
+    exit = 1;
+    return exit;
+}
+
+int main()
+{
+
+    int balance = 100;
+    int exit;
+    int numeroAposta;
+    int numeroRoleta;
+    int betValue = 0;
+    char option;
+    char betOption;
+
+
+    srand(time(NULL));
+
+
+    printf("Olá compadre, sê bem-vindo ao casino!");
+	while (balance > 0 && exit != 1)
+    {
+		option = getOption();
+    
+		if(option == 'n')
+        {
+            betOption = option;
+            while(numeroAposta > 36 || numeroAposta < 0)
+            {
+                numeroAposta = getNumber();
+
+                if(numeroAposta > 36 || numeroAposta < 0)
+                {
+                    printf("\nAposta em um numero entre 1 e 36.\n");
+                }
+                else
+                {
+                    printf("\nAcabas-te de apostar no numero %d.\n", numeroAposta);
+                }
+            }
+        }
+        else if(option == 'e')
+        {
+            betOption = option;
+            printf("\nApostas-te nos pares!\n");
+        }
+        else if(option == 'o')
+        {
+            betOption = option;
+            printf("\nApostas-te nos impares!\n");
+        }
+        else if(option == 'b')
+        {
+            while(betValue <= 0 || betValue > balance)
+            {
+                betValue = getValue();
+
+                if(betValue < 0 || betValue > balance)
+                {
+                    printf("\nSó podes apostar entre os 0 e %d euros.\n\n", balance);
+                }
+                else
+                {
+                    printf("\nApostas-te %d euros!\n", betValue);
+                }
+            }
+        }
+        else if(option == 'r')
+        {
+            if(betOption == 'n' || betOption == 'e' || betOption == 'o' && (betValue > balance || betValue < 0))
+            {
+                numeroRoleta = roll();
+                printf("\nA bola caiu no numero %d.\n", numeroRoleta);
+
+                if(numeroRoleta == 0)
+                {
+                    balance -= betValue;
+                    printf("\nNinguém ganhou.\n");
+                }
+                if(betOption == 'n')
+                {
+                    numeroAposta = getNumber;
+
+                    if(numeroAposta == numeroRoleta)
+                    {
+                        balance += (betValue*35);
+                        printf("\nGanhas-te!\n");
+                    }
+                    else
+                    {
+                        balance -= betValue;
+                        printf("\nPerdes-te!\n");
+                    }
+                }
+                else if(betOption == 'e')
+                {
+                    if(numeroRoleta%2 == 0)
+                    {
+                        balance += betValue;
+                        printf("\nGanhas-te!\n");
+                    }
+                    else
+                    {
+                        balance -= betValue;
+                        printf("\nPerdes-te!\n");
+                    }
+                }
+                else if(betOption == 'o')
+                {
+                   if(numeroRoleta%2 == 1)
+                    {
+                        balance += betValue;
+                        printf("\nGanhas-te!\n");
+                    }
+                    else
+                    {
+                        balance -= betValue;
+                        printf("\nPerdes-te!\n");
+                    }
+                }
+            }
+            else
+            {
+                printf("\nPrimeiro define onde e quanto queres aposta.\n\n");
+            }
+        }
+        else if(option == 's')
+        {
+            printf("\nTens %d euros de momento.\n", balance);
+        }
+        else if(option == 'c')
+        {
+            exit = cashout();
+            printf("\nAbandonas-te o casino com %d euros.\n", balance);
+        }
+        else
+        {
+            printf("Opção inválida.");
+        }      
+  printf("\nDinheiro atual %d\n",balance);
+  printf("Aposta atual %d",betValue); 
+	}
+
+	return 0;
+}
